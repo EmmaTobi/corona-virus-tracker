@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.5.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	
+	</parent>
+	<groupId>com.corona</groupId>
+	<artifactId>corona-virus-tracker</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>corona-virus-tracker</name>
+	<packaging>war</packaging>
+	<description>A Project to track the spread of corona virus efficiently</description>
+
+	<properties>
+		<java.version>13</java.version>
+		    <maven.compiler.target>13</maven.compiler.target>
+    <maven.compiler.source>13</maven.compiler.source>
+	</properties>
+
+	<dependencies>
+	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-tomcat</artifactId>
+</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-csv -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-csv</artifactId>
+    <version>1.8</version>
+</dependency>
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+            
+		</plugins>
+	</build>
+
+</project>
